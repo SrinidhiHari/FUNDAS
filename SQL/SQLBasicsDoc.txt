@@ -1,0 +1,49 @@
+/*
+Basic SQL Questions, Includes tips on DATAWAREHOUSING and DATA Modelling
+*/
+
+/*How to find if a table has duplicates*/
+
+Step 1:
+
+Select count(*) from table
+
+Step 2:
+
+select count(*) from (select distinct * from table)
+
+If the record count in returned by Query in Step  and Step 2 are equal then the table does nto have duplicates
+
+
+/*How to find duplicates of a column*/
+
+select column_name, count(*) from  table group by column_name having count(*) > 
+
+Get the values for this column and query the table to check the duplicates
+/*How to search for a column in a database*/
+
+SQL Server: INFORMATION_SCHEMA
+Oracle: all_tab_cols
+
+/*How to find which column in the table has duplicates*/
+
+/*How to generate a sequence of numbers in SQL query*/
+
+SQL- Structured query language- used to interact with database Management systems.
+
+RDMBS- relational database management system- Oracle, SQL Server
+
+DML- Data Manipulation language- syntax which changes the value of table-> Insert, Update, delete
+DDL- Data definaition Language- Syntax which changes the table-> CREATE, ALTER, TRUNCATE
+DCL- Data Control Language- Suntax which controls the data in terms of viewing, modifying-> Grant, revoke
+TCL- Transaction Control Languagae- Syntax which controls a transaction-> Commit, roll back
+
+/*which one to use : Truncate or Delete*/
+
+If the need is to remove all the records from the table, Truncate can be used, It is a DDL statement and behaves faster than Delete.
+If the need is to remove selected records from the table, delete can be used.
+
+
+
+
+
