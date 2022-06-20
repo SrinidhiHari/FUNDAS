@@ -1,0 +1,15 @@
+####################################################################
+
+#Data types in Python
+#Difference between List, Tupes, Set, dictionary
+#Namedtuple, frozen set, defaultDict
+#List Comprehension
+#Functions and its types
+#OOPS- Class, Inheritance, Polymorphism, Abtraction
+#Constructors
+#Generators, ierablea nd iterators
+#Python module and package
+#pandas dataframe
+
+
+
